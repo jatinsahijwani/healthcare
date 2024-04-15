@@ -29,41 +29,41 @@ import { Separator } from "@/components/ui/separator"
 
 export function MedicalHistoryCard() {
   return (
-    <Card key="1">
+    <Card key="1" className="m-[2vw] border-green-600 border-[5px]">
       <CardHeader>
-        <CardTitle>Medical History</CardTitle>
+        <CardTitle className=" text-green-600 text-4xl">Medical History</CardTitle>
         <CardDescription>Patient's medical history and prescription details</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div className="border-black">
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold">Diabetes</h3>
-              <Button size="icon" variant="outline">
+              <h3 className="font-semibold text-red-600 text-2xl">Diabetes</h3>
+              <Button  size="icon" variant="outline">
                 <FileEditIcon className="h-4 w-4" />
-                <span className="sr-only">Edit</span>
+                <span className="sr-only ">Edit</span>
               </Button>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-medium">Medication</h4>
+                <h4 className="font-medium text-yellow-500">Medication</h4>
                 <ul className="list-disc list-inside">
                   <li>Insulin</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium">Prescribed by</h4>
+                <h4 className="font-medium text-yellow-500 ">Prescribed by</h4>
                 <p>Dr. Smith Johnson</p>
               </div>
               <div>
-                <h4 className="font-medium">Date</h4>
+                <h4 className="font-medium text-blue-500">Date</h4>
                 <p>March 12, 2023</p>
               </div>
             </div>
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold">Hypertension</h3>
+              <h3 className="font-semibold text-red-600 text-2xl">Hypertension</h3>
               <Button size="icon" variant="outline">
                 <FileEditIcon className="h-4 w-4" />
                 <span className="sr-only">Edit</span>
@@ -71,18 +71,18 @@ export function MedicalHistoryCard() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-medium">Medication</h4>
+                <h4 className="font-medium  text-yellow-500">Medication</h4>
                 <ul className="list-disc list-inside">
                   <li>Aspirin</li>
                   <li>Lisinopril</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium">Prescribed by</h4>
+                <h4 className="font-medium  text-yellow-500 ">Prescribed by</h4>
                 <p>Dr. Alice Lee</p>
               </div>
               <div>
-                <h4 className="font-medium">Date</h4>
+                <h4 className="font-medium text-blue-500">Date</h4>
                 <p>June 5, 2023</p>
               </div>
             </div>
@@ -92,7 +92,7 @@ export function MedicalHistoryCard() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           <div>
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold">Asthma</h3>
+              <h3 className="font-semibold text-red-600 text-2xl">Asthma</h3>
               <Button size="icon" variant="outline">
                 <FileEditIcon className="h-4 w-4" />
                 <span className="sr-only">Edit</span>
@@ -100,25 +100,25 @@ export function MedicalHistoryCard() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-medium">Medication</h4>
+                <h4 className="font-medium  text-yellow-500">Medication</h4>
                 <ul className="list-disc list-inside">
                   <li>Albuterol</li>
                   <li>Inhaled corticosteroids</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium">Prescribed by</h4>
+                <h4 className="font-medium  text-yellow-500">Prescribed by</h4>
                 <p>Dr. Michael Brown</p>
               </div>
               <div>
-                <h4 className="font-medium">Date</h4>
+                <h4 className="font-medium text-blue-500">Date</h4>
                 <p>August 20, 2023</p>
               </div>
             </div>
           </div>
           <div>
             <div className="flex items-center gap-2">
-              <h3 className="font-semibold">Allergies</h3>
+              <h3 className="font-semibold text-red-600 text-2xl">Allergies</h3>
               <Button size="icon" variant="outline">
                 <FileEditIcon className="h-4 w-4" />
                 <span className="sr-only">Edit</span>
@@ -126,25 +126,25 @@ export function MedicalHistoryCard() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <div>
-                <h4 className="font-medium">Medication</h4>
+                <h4 className="font-medium  text-yellow-500">Medication</h4>
                 <ul className="list-disc list-inside">
                   <li>Antihistamines</li>
                   <li>EpiPen</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium">Prescribed by</h4>
+                <h4 className="font-medium  text-yellow-500">Prescribed by</h4>
                 <p>Dr. Sarah White</p>
               </div>
               <div>
-                <h4 className="font-medium">Date</h4>
+                <h4 className="font-medium text-blue-500">Date</h4>
                 <p>December 10, 2023</p>
               </div>
             </div>
           </div>
         </div>
       </CardContent>
-      <CardFooter>
+      <CardFooter className="mt-[5vh]">
         <Button className="w-full" variant="outline">
           View previous reports
         </Button>
