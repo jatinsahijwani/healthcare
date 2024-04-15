@@ -63,34 +63,19 @@ export function KidneyForm() {
               <Label className="text-white" htmlFor="history">
                 Medical History
               </Label>
-              <Textarea
-                className="bg-white text-gray-800 rounded-md p-2"
-                id="history"
-                placeholder="Enter the patient's medical history"
-                required
-              />
+              <Input className="bg-white text-gray-800 rounded-md p-2" id="gender" placeholder="Gender" required />
             </div>
             <div className="space-y-2">
               <Label className="text-white" htmlFor="symptoms">
                 Symptoms
               </Label>
-              <Textarea
-                className="bg-white text-gray-800 rounded-md p-2"
-                id="symptoms"
-                placeholder="Enter the patient's symptoms"
-                required
-              />
+              <Input className="bg-white text-gray-800 rounded-md p-2" id="gender" placeholder="Gender" required />
             </div>
             <div className="space-y-2">
               <Label className="text-white" htmlFor="tests">
                 Test Results
               </Label>
-              <Textarea
-                className="bg-white text-gray-800 rounded-md p-2"
-                id="tests"
-                placeholder="Enter any relevant test results"
-                required
-              />
+              <Input className="bg-white text-gray-800 rounded-md p-2" id="gender" placeholder="Gender" required />
             </div>
           </div>
           <Button className="w-full bg-white text-purple-500 hover:bg-purple-500 hover:text-white">Assess Risk</Button>
