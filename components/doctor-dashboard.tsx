@@ -77,28 +77,28 @@ export function DoctorDashboard() {
             <div className="grid gap-2">
               <div className="flex items-center gap-2">
                 <BugIcon className="w-7 h-7 text-green-600 dark:text-yellow-500" />
-                <span className="font-bold text-green-600 dark:text-red-600">COVID-19</span>
-                <span className="text-sm text-green-600 dark:text-white">1024 cases</span>
+                <span className="font-bold text-green-600 dark:text-red-600">Viral Fever</span>
+                <span className="text-sm text-green-600 dark:text-white">239 cases</span>
               </div>
               <div className="flex items-center gap-2">
                 <BugIcon className="w-7 h-7 text-green-600 dark:text-yellow-500" />
-                <span className="font-bold text-green-600 dark:text-red-600">Malaria</span>
-                <span className="text-sm text-green-600 dark:text-white">512 cases</span>
+                <span className="font-bold text-green-600 dark:text-red-600">Typhoid</span>
+                <span className="text-sm text-green-600 dark:text-white">104 cases</span>
               </div>
               <div className="flex items-center gap-2">
                 <BugIcon className="w-7 h-7 text-green-600 dark:text-yellow-500" />
                 <span className="font-bold text-green-600 dark:text-red-600">Dengue</span>
-                <span className="text-sm text-green-600 dark:text-white">256 cases</span>
+                <span className="text-sm text-green-600 dark:text-white">22 cases</span>
               </div>
               <div className="flex items-center gap-2">
                 <BugIcon className="w-7 h-7 text-green-600 dark:text-yellow-500" />
-                <span className="font-bold text-green-600 dark:text-red-600">Cholera</span>
-                <span className="text-sm text-green-600 dark:text-white">128 cases</span>
+                <span className="font-bold text-green-600 dark:text-red-600">Smallpox</span>
+                <span className="text-sm text-green-600 dark:text-white">19 cases</span>
               </div>
               <div className="flex items-center gap-2">
                 <BugIcon className="w-7 h-7 text-green-600 dark:text-yellow-500" />
-                <span className="font-bold text-green-600 dark:text-red-600">Zika</span>
-                <span className="text-sm text-green-600 dark:text-white">64 cases</span>
+                <span className="font-bold text-green-600 dark:text-red-600">Skin Rashes</span>
+                <span className="text-sm text-green-600 dark:text-white">7 cases</span>
               </div>
             </div>
           </CardContent>
@@ -149,58 +149,6 @@ function ActivityIcon(props) {
     >
       <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
     </svg>
-  )
-}
-function BarChart(props) {
-  return (
-    <div {...props}>
-      <ResponsiveBar
-        data={[
-          { name: "Jan", count: 111 },
-          { name: "Feb", count: 157 },
-          { name: "Mar", count: 129 },
-          { name: "Apr", count: 150 },
-          { name: "May", count: 119 },
-          { name: "Jun", count: 72 },
-        ]}
-        keys={["count"]}
-        indexBy="name"
-        margin={{ top: 0, right: 0, bottom: 40, left: 2}}
-        padding={0.3}
-        colors={["white"]}
-        axisBottom={{
-          tickSize: 0,
-          tickPadding: 16,
-        }}
-        axisLeft={{
-          tickSize: 0,
-          tickValues: 4,
-          tickPadding: 16,
-        }}
-        gridYValues={4}
-        theme={{
-          tooltip: {
-            chip: {
-              borderRadius: "9999px",
-            },
-            container: {
-              fontSize: "12px",
-              textTransform: "capitalize",
-              borderRadius: "6px",
-            },
-          },
-          grid: {
-            line: {
-              stroke: "#f3f4f6",
-            },
-          },
-        }}
-        tooltipLabel={({ id }) => id}
-        enableLabel={false}
-        role="application"
-        ariaLabel="A bar chart showing data"
-      />
-    </div>
   )
 }
 
@@ -276,7 +224,7 @@ function CurvedlineChart(props) {
               { x: "Mar", y: 177 },
               { x: "Apr", y: 78 },
               { x: "May", y: 96 },
-              { x: "Jun", y: 204 },
+              { x: "Jun", y: 34 },
             ],
           },
         ]}
