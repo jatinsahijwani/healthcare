@@ -9,17 +9,17 @@ export function DoctorDashboard() {
   return (
     <div key="1" className="flex flex-col w-full min-h-screen dark:bg-black dark:text-white">
       <header className="flex items-center h-16 px-4 border-b shrink-0 md:px-6">
-        <nav className="flex-col hidden gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
-          <Link className="text-green-600 dark:text-green-400" href="#">
+        <nav className="flex-col hidden gap-6 text-xl font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
+          <Link className="text-green-600 font-bold" href="#">
             Diseases
           </Link>
-          <Link className="text-green-600 dark:text-green-400" href="#">
+          <Link className="text-green-600 font-bold" href="#">
             Prevention
           </Link>
-          <Link className="text-green-600 dark:text-green-400" href="#">
+          <Link className="text-green-600 font-bold" href="#">
             Symptoms
           </Link>
-          <Link className="text-green-600 dark:text-green-400" href="#">
+          <Link className="text-green-600 font-bold" href="#">
             Treatment
           </Link>
         </nav>
@@ -37,77 +37,79 @@ export function DoctorDashboard() {
         </div>
       </header>
       <main className="flex flex-col gap-4 p-4 md:gap-8 md:p-10 dark:text-white">
-        <div className="grid gap-4 md:grid-cols-2">
-          <Card>
+        <div className="grid gap-4 md:grid-cols-2 ">
+          <Card className="w-[46vw]">
             <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
-              <CardTitle className="text-sm font-medium text-green-600 dark:text-green-400">Total Cases</CardTitle>
-              <UsersIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
+              <CardTitle className="text-md font-bold text-black dark:text-yellow-500">Total Cases</CardTitle>
+              <UsersIcon className="w-4 h-4 text-yellow-600 dark:text-yellow-600" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-green-600 dark:text-green-400">+2350</div>
-              <p className="text-xs text-green-600 dark:text-green-400">+180.1% from last month</p>
+              <div className="text-2xl font-bold text-red-600 dark:text-red-600">+2350</div>
+              <p className="text-sm text-red-800 dark:text-white">+180.1% from last month</p>
             </CardContent>
           </Card>
           <Card>
             <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
-              <CardTitle className="text-sm font-medium text-green-600 dark:text-green-400">Active Cases</CardTitle>
-              <ActivityIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
+              <CardTitle className="text-md font-bold text-black dark:text-yellow-500">Active Cases</CardTitle>
+              <ActivityIcon className="w-4 h-4 text-yellow-600 dark:text-yellow-600" />
             </CardHeader>
             <CardContent>
-              <div className="text-2xl font-bold text-green-600 dark:text-green-400">+573</div>
-              <p className="text-xs text-green-600 dark:text-green-400">+201 since last hour</p>
+              <div className="text-2xl font-bold text-red-600 dark:text-red-600">+573</div>
+              <p className="text-sm text-red-800 dark:text-white">+201 since last hour</p>
             </CardContent>
           </Card>
         </div>
-        <Card>
+      <div className="grid gap-4 md:grid-cols-2">
+        <Card className="w-[46vw] ">
           <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
             <div className="grid gap-1.5">
-              <CardTitle className="text-green-600 dark:text-green-400">Trending Diseases</CardTitle>
-              <CardDescription className="text-green-600 dark:text-green-400">
+              <CardTitle className="text-green-600 dark:text-green-400 pb-3">Trending Diseases</CardTitle>
+              <CardDescription className="text-green-600 dark:text-white text-sm">
                 The top 5 diseases trending in the community.
               </CardDescription>
             </div>
             <Button className="rounded-full" size="icon" variant="outline">
-              <ChevronRightIcon className="h-4 w-4 text-green-600 dark:text-green-400" />
+              <ChevronRightIcon className="h-5 w-5 text-green-600 dark:text-green-400" />
               <span className="sr-only">View all</span>
             </Button>
           </CardHeader>
           <CardContent className="flex flex-col gap-4">
             <div className="grid gap-2">
               <div className="flex items-center gap-2">
-                <BugIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
-                <span className="font-semibold text-green-600 dark:text-green-400">COVID-19</span>
-                <span className="text-sm text-green-600 dark:text-green-400">1024 cases</span>
+                <BugIcon className="w-7 h-7 text-green-600 dark:text-yellow-500" />
+                <span className="font-bold text-green-600 dark:text-red-600">COVID-19</span>
+                <span className="text-sm text-green-600 dark:text-white">1024 cases</span>
               </div>
               <div className="flex items-center gap-2">
-                <BugIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
-                <span className="font-semibold text-green-600 dark:text-green-400">Malaria</span>
-                <span className="text-sm text-green-600 dark:text-green-400">512 cases</span>
+                <BugIcon className="w-7 h-7 text-green-600 dark:text-yellow-500" />
+                <span className="font-bold text-green-600 dark:text-red-600">Malaria</span>
+                <span className="text-sm text-green-600 dark:text-white">512 cases</span>
               </div>
               <div className="flex items-center gap-2">
-                <BugIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
-                <span className="font-semibold text-green-600 dark:text-green-400">Dengue</span>
-                <span className="text-sm text-green-600 dark:text-green-400">256 cases</span>
+                <BugIcon className="w-7 h-7 text-green-600 dark:text-yellow-500" />
+                <span className="font-bold text-green-600 dark:text-red-600">Dengue</span>
+                <span className="text-sm text-green-600 dark:text-white">256 cases</span>
               </div>
               <div className="flex items-center gap-2">
-                <BugIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
-                <span className="font-semibold text-green-600 dark:text-green-400">Cholera</span>
-                <span className="text-sm text-green-600 dark:text-green-400">128 cases</span>
+                <BugIcon className="w-7 h-7 text-green-600 dark:text-yellow-500" />
+                <span className="font-bold text-green-600 dark:text-red-600">Cholera</span>
+                <span className="text-sm text-green-600 dark:text-white">128 cases</span>
               </div>
               <div className="flex items-center gap-2">
-                <BugIcon className="w-4 h-4 text-green-600 dark:text-green-400" />
-                <span className="font-semibold text-green-600 dark:text-green-400">Zika</span>
-                <span className="text-sm text-green-600 dark:text-green-400">64 cases</span>
+                <BugIcon className="w-7 h-7 text-green-600 dark:text-yellow-500" />
+                <span className="font-bold text-green-600 dark:text-red-600">Zika</span>
+                <span className="text-sm text-green-600 dark:text-white">64 cases</span>
               </div>
             </div>
           </CardContent>
         </Card>
-        <Card>
+
+        <Card className="w-[46vw]">
           <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
             <div className="grid gap-1.5">
               <CardTitle className="text-green-600 dark:text-green-400">Line Chart</CardTitle>
               <CardDescription className="text-green-600 dark:text-green-400">
-                A line chart showing the rise in temperature.
+                A line chart showing the rise in cases.
               </CardDescription>
             </div>
             <Button className="rounded-full" size="icon" variant="outline">
@@ -115,27 +117,17 @@ export function DoctorDashboard() {
               <span className="sr-only">Download</span>
             </Button>
           </CardHeader>
-          <CardContent>
-            <CurvedlineChart className="w-full aspect-[2/1]" />
+          <CardContent >
+            <CurvedlineChart className="w-[40vw] h-[35vh] " />
           </CardContent>
         </Card>
-        <Card>
-          <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
-            <div className="grid gap-1.5">
-              <CardTitle className="text-green-600 dark:text-green-400">Bar Chart</CardTitle>
-              <CardDescription className="text-green-600 dark:text-green-400">
-                A bar chart showing the number of patients.
-              </CardDescription>
-            </div>
-            <Button className="rounded-full" size="icon" variant="outline">
-              <DownloadIcon className="h-4 w-4 text-green-600 dark:text-green-400" />
-              <span className="sr-only">Download</span>
-            </Button>
-          </CardHeader>
-          <CardContent>
-            <BarChart className="w-full aspect-[2/1]" />
-          </CardContent>
-        </Card>
+      
+
+
+        </div>
+        
+        
+        
       </main>
     </div>
   )
@@ -159,8 +151,6 @@ function ActivityIcon(props) {
     </svg>
   )
 }
-
-
 function BarChart(props) {
   return (
     <div {...props}>
@@ -175,9 +165,9 @@ function BarChart(props) {
         ]}
         keys={["count"]}
         indexBy="name"
-        margin={{ top: 0, right: 0, bottom: 40, left: 40 }}
+        margin={{ top: 0, right: 0, bottom: 40, left: 2}}
         padding={0.3}
-        colors={["#2563eb"]}
+        colors={["white"]}
         axisBottom={{
           tickSize: 0,
           tickPadding: 16,
@@ -205,7 +195,7 @@ function BarChart(props) {
             },
           },
         }}
-        tooltipLabel={({ id }) => `${id}`}
+        tooltipLabel={({ id }) => id}
         enableLabel={false}
         role="application"
         ariaLabel="A bar chart showing data"
@@ -213,7 +203,6 @@ function BarChart(props) {
     </div>
   )
 }
-
 
 function BugIcon(props) {
   return (
@@ -263,8 +252,6 @@ function ChevronRightIcon(props) {
     </svg>
   )
 }
-
-
 function CurvedlineChart(props) {
   return (
     <div {...props}>
