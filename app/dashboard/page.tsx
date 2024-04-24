@@ -1,8 +1,3 @@
-/**
- * v0 by Vercel.
- * @see https://v0.dev/t/STnmAebtmjI
- * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
- */
 "use client";
 import { Progress } from "@/components/ui/progress"
 import { Card } from "@/components/ui/card"
@@ -14,7 +9,7 @@ export default function Component() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <Card className="bg-[#0f3460] rounded-lg p-6 space-y-4">
           <SlidersIcon className="text-pink-500" />
-          <h2 className="text-xl font-bold">AI Content Generation</h2>
+          <h2 className="text-xl font-bold">Smart ML Algorithms</h2>
           <p>Experience the power of AI in generating unique content.</p>
           <div className="space-y-2">
             <Progress className="w-full" value={70} />
@@ -24,8 +19,8 @@ export default function Component() {
         </Card>
         <Card className="bg-[#0f3460] rounded-lg p-6 space-y-4">
           <CheckCircleIcon className="text-green-500" />
-          <h2 className="text-xl font-bold">Automated Proofreading</h2>
-          <p>Let AI handle the proofreading of your documents.</p>
+          <h2 className="text-xl font-bold">Hospital Inventory System</h2>
+          <p>Live Inventory Management System for Hospitals & Healthcare Resources</p>
           <div className="space-y-2">
             <Progress className="w-full" value={60} />
             <Progress className="w-full" value={30} />
@@ -34,8 +29,8 @@ export default function Component() {
         </Card>
         <Card className="bg-[#0f3460] rounded-lg p-6 space-y-4">
           <LightbulbIcon className="text-yellow-500" />
-          <h2 className="text-xl font-bold">Contextual Suggestions</h2>
-          <p>Get AI-powered suggestions based on your writing context.</p>
+          <h2 className="text-xl font-bold">Symptom to Diseases AI</h2>
+          <p>Smart AI Chatbot, predicts Disease based on Symptoms.</p>
           <div className="space-y-2">
             <Progress className="w-full" value={50} />
             <Progress className="w-full" value={75} />
@@ -44,8 +39,8 @@ export default function Component() {
         </Card>
         <Card className="bg-[#0f3460] rounded-lg p-6 space-y-4">
           <SmileIcon className="text-blue-500" />
-          <h2 className="text-xl font-bold">Sentiment Analysis</h2>
-          <p>Understand the sentiment of your text with AI analysis.</p>
+          <h2 className="text-xl font-bold">Medical History</h2>
+          <p>Medical History with eKYC Protection.</p>
           <div className="space-y-2">
             <Progress className="w-full" value={80} />
             <Progress className="w-full" value={65} />
@@ -54,15 +49,15 @@ export default function Component() {
         </Card>
         <Card className="bg-[#0f3460] rounded-lg p-6 space-y-4">
           <BarChartIcon className="text-purple-500" />
-          <h2 className="text-xl font-bold">Data Visualization</h2>
-          <p>Visualize data trends and patterns effectively.</p>
+          <h2 className="text-xl font-bold">Medical Dashboard</h2>
+          <p>Based on trending diagnosis, Dashboard.</p>
           <CurvedlineChart className="w-full h-[200px]" />
         </Card>
         <Card className="bg-[#0f3460] rounded-lg p-6 space-y-4">
           <BookOpenIcon className="text-red-500" />
-          <h2 className="text-xl font-bold">Text Summarization</h2>
-          <p>Summarize your lengthy documents with AI technology.</p>
-          <div className="space-y-2">
+          <h2 className="text-xl font-bold">IoT Monitoring</h2>
+          <p>Health Monitoring Device Dashboard.</p>
+          <div className="space-y-2 justify-around">
             <Progress className="w-full" value={55} />
             <Progress className="w-full" value={85} />
             <Progress className="w-full" value={30} />
