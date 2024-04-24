@@ -8,14 +8,6 @@ import { Button } from "@/components/ui/button";
 import { Inter } from 'next/font/google';
 import './styles.css';
 
-// Define the Inter font with TypeScript
-const inter = Inter({
- subsets: ['latin'],
- display: 'swap',
- variable: '--font-inter',
-});
-
-// Define the Component
 const Component: React.FC = () => {
  return (
     <div className="grid md:grid-cols-2 items-start gap-4">
@@ -155,21 +147,5 @@ const Component: React.FC = () => {
  );
 };
 
-// Define the LayoutProps interface for the Layout component
-interface LayoutProps {
- children: React.ReactNode;
-}
 
-// Define the Layout component
-const Layout: React.FC<LayoutProps> = ({ children }) => {
- return (
-    <html lang="en">
-      <body className={inter.variable + inter.variable}>
-        {children}
-      </body>
-    </html>
- );
-};
-
-// Export the components
-export { Component, Layout };
+export default Component;
