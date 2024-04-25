@@ -18,8 +18,8 @@ export default function VideoCallPage() {
  useEffect(() => {
     const initializeVideoCall = async () => {
       const { ZegoUIKitPrebuilt } = await import('@zegocloud/zego-uikit-prebuilt');
-      const appID = 905032875; // Replace with your actual app ID
-      const serverSecret = 'cf188f9c180c5f478cdc68ac11f1e7ab'; // Replace with your actual server secret
+      const appID = 860018851; // Replace with your actual app ID
+      const serverSecret = '51480767a8a997ef0663ada34684e11f'; // Replace with your actual server secret
       const roomID = 'your_room_id'; // Replace with your actual room ID
       const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID, randomID(5), randomID(5));
       const zp = ZegoUIKitPrebuilt.create(kitToken);
